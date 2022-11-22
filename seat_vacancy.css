@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-y: scroll;
+}
+
+#steering {
+    display: flex;
+    justify-content: end;
+    height: 60px;
+}
+
+#seat-box {
+    border: 1px solid black;
+    padding: 20px;
+    margin-top: 45px;
+    height: 540px;
+    width: 18vw;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 24px;
+    margin-top: 15px;
+    margin-right: 18px;
+}
+
+button {
+    margin-top: 25px;
+    width: 10vw;
+    height: 40px;
+    background-color: darkgreen;
+    color: white;
+    font-size: 1.2vw;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.228), 0 10px 10px rgba(0, 0, 0, 0.228);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    box-shadow: none;
+}
+
+.fa-solid {
+    font-size: 30px;
+    margin-right: 10px;
+    background: none;
+}
+
+.fa-solid:hover {
+    cursor: pointer;
+}
+
+.fa-circle {
+    font-size: 10px;
+    margin-right: 2px;
+}
+
+span {
+    margin-right: 25px;
+}

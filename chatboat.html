@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./chatboat.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="chatLog">May I help you!!<br></p>
+    <div class="main">
+        <br>
+        <input type="text" name="" id="text" onkeydown="if(event.keyCode==13){talk()}" placeholder="May I help you!!">
+    </div>
+
+</body>
+<script>
+    know = {
+
+        "Hi": "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Hi,How can I help you!!" + "<br>",
+        "I have some bus related issue": "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Ok,Tell me your issue?" + "<br>",
+        "I have issue regarding my seat reservation!!,My Money is not refunded yet": "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspWait, we are fetching your details!" + "<br>",
+        "Ohk": "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspWe have send your issue to our higher Authority!!" + "<br>",
+        "Ok": "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspYour issue will been resolve soon!" + "<br>",
+        "Ohk,thankyou!": "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspyour welcome!Thankyou for Choosing Myticket.com!"
+    }
+
+    function talk() {
+        var user = document.getElementById('text').value;
+        document.getElementById('text').value = "";
+        document.getElementById('chatLog').innerHTML += user + "<br>";
+        if (user in know) {
+            document.getElementById("chatLog").innerHTML += know[user] + "<br";
+
+        } else {
+            document.getElementById('chatLog').innerHTML += "I don't understand your problem.Please contact on 1800419419<br>";
+        }
+    }
+</script>
+
+</html>

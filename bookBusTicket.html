@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bookBusTicket.css">
+    <title>Bus Ticket Information</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">Book Bus Ticket</div>
+        <form action="" method="post">
+            <div class="selectItem">
+                <label for="From">Select Source</label>
+                <select name="From" class="select">            
+                    <option value="">Select city</option>
+                    <option value="Lucknow">Lucknow</option>
+                    <option value="Sitapur">Sitapur</option>
+                    <option value="Shahjahanpur">Shahjahanpur</option>
+                    <option value="Bareilly">Bareilly</option>
+                    <option value="Moradabad">Moradabad</option>
+                    <option value="Rampur">Rampur</option>
+                    <option value="Hapur">Hapur</option>
+                    <option value="Ghaziabad">Ghaziabad</option>
+                    <option value="Merut">Merut</option>
+                    <option value="Muzaffarnagar">Muzaffarnagar</option>
+                    <option value="Aligarh">Aligarh</option>
+                    <option value="Mathura">Mathura</option>
+                    <option value="Hathras">Hathras</option>
+                    <option value="Agra">Agra</option>
+                    <option value="Mainpuri">Mainpuri</option>
+                    <option value="Ethawa">Ethawa</option>
+                    <option value="Firozabad">Firozabad</option>
+                    <option value="Kanpur">Kanpur</option>
+                    <option value="Varanasi">Varanasi</option>
+                    <option value="Allahabad">Allahabad</option>
+                    <option value="Lakhimpur">Lakhimpur</option>
+                </select>
+            </div>
+            <div class="selectItem">
+                <label for="To">Destination</label>
+                <select name="To" class="select">
+                    <option value="">Select city</option>
+                    <option value="Lucknow">Lucknow</option>
+                    <option value="Sitapur">Sitapur</option>
+                    <option value="Shahjahanpur">Shahjahanpur</option>
+                    <option value="Bareilly">Bareilly</option>
+                    <option value="Moradabad">Moradabad</option>
+                    <option value="Rampur">Rampur</option>
+                    <option value="Hapur">Hapur</option>
+                    <option value="Ghaziabad">Ghaziabad</option>
+                    <option value="Merut">Merut</option>
+                    <option value="Muzaffarnagar">Muzaffarnagar</option>
+                    <option value="Aligarh">Aligarh</option>
+                    <option value="Mathura">Mathura</option>
+                    <option value="Hathras">Hathras</option>
+                    <option value="Agra">Agra</option>
+                    <option value="Mainpuri">Mainpuri</option>
+                    <option value="Ethawa">Ethawa</option>
+                    <option value="Firozabad">Firozabad</option>
+                    <option value="Kanpur">Kanpur</option>
+                    <option value="Varanasi">Varanasi</option>
+                    <option value="Allahabad">Allahabad</option>
+                    <option value="Lakhimpur">Lakhimpur</option>
+                </select>
+            </div>
+            <div class="selectItem">
+                <label for="Username">Name</label>
+                <input type="text" name="name" placeholder="Name"  required>
+            </div>
+            <div class="selectItem">
+                <label for="contact-no">Contact Number</label>
+                <input type="number" placeholder="Contact Number" name="contact" required>
+            </div>
+            <div class="selectItem">
+                <label for="seat">Select your choice seat no. : </label>
+                <select name="seat" class="select" required> 
+                    <option value="">Select</option>
+                    <option value="">S2</option>
+                    <option value="">S3</option>
+                    <option value="">S5</option>
+                    <option value="">S7</option>
+                    <option value="">S9</option>
+                    <option value="">S10</option>
+                    <option value="">S12</option>
+                    <option value="">S14</option>
+                    <option value="">S15</option>
+                    <option value="">S17</option>
+                    <option value="">S19</option>
+                    <option value="">S23</option>
+                    <option value="">S25</option>
+                    <option value="">S26</option>
+                    <option value="">S28</option>
+                    <option value="">S29</option>
+                    <option value="">S30</option>
+                    <option value="">S33</option>
+                    <option value="">S32</option>
+                    <option value="">S36</option>
+                    <option value="">S37</option>
+                    
+                </select>
+            </div>
+            <div class="selectItem">
+                <label for="Date-of-Journey">Date of Journey</label>
+                <input type="date" placeholder="Enter your DOB"  name="date" required>
+            </div>
+            <button type="button" onclick="Register()">Submit</button>
+        </form>
+    </div>
+</body>
+<script>
+    function Register() {
+        window.open('PaymentGateway.html');
+    }
+</script>
+
+</html>

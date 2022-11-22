@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/1a28c72721.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./seat_vacancy.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus seats</title>
+</head>
+
+<body>
+    <center>
+        <div id="seat-box">
+            <div id="steering">
+                <i class="fa-solid fa-circle-radiation" style="color: gray"></i>
+            </div>
+
+            <div class="row">
+                <div>
+                    <i id="s1" class="fa-solid fa-chair" style="color: gray;"></i>
+                    <i id="s2" class="fa-solid fa-chair" onclick="select('s2')"></i>
+                </div>
+                <div>
+                    <i id="s3" class="fa-solid fa-chair" onclick="select('s3')"></i>
+                    <i id="s4" class="fa-solid fa-chair"  style="color: red;"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <i id="s5" class="fa-solid fa-chair" onclick="select('s5')"></i>
+                    <i id="s6" class="fa-solid fa-chair"  style="color: red;"></i>
+                </div>
+                <div>
+                    <i id="s7" class="fa-solid fa-chair" onclick="select('s7')"></i>
+                    <i id="s8" class="fa-solid fa-chair"  style="color: red;"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <i id="s9" class="fa-solid fa-chair" onclick="select('s9')"></i>
+                    <i id="s10" class="fa-solid fa-chair" onclick="select('s10')"></i>
+                </div>
+                <div>
+                    <i id="s11" class="fa-solid fa-chair"  style="color: red;"></i>
+                    <i id="s12" class="fa-solid fa-chair" onclick="select('s12')"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <i id="s13" class="fa-solid fa-chair" style="color: red;"></i>
+                    <i id="s14" class="fa-solid fa-chair" onclick="select('s14')"></i>
+                </div>
+                <div>
+                    <i id="s15" class="fa-solid fa-chair" onclick="select('s15')"></i>
+                    <i id="s16" class="fa-solid fa-chair"  style="color: red;"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <i id="s17" class="fa-solid fa-chair" onclick="select('s17')"></i>
+                    <i id="s18" class="fa-solid fa-chair"  style="color: red;"></i>
+                </div>
+                <div>
+                    <i id="s19" class="fa-solid fa-chair" onclick="select('s19')"></i>
+                    <i id="s20" class="fa-solid fa-chair"  style="color: red;"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <i id="s21" class="fa-solid fa-chair"  style="color: red;"></i>
+                    <i id="s22" class="fa-solid fa-chair"  style="color: red;"></i>
+                </div>
+                <div>
+                    <i id="s23" class="fa-solid fa-chair" onclick="select('s23')"></i>
+                    <i id="s24" class="fa-solid fa-chair"  style="color: red;"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <i id="s25" class="fa-solid fa-chair" onclick="select('s25')"></i>
+                    <i id="s26" class="fa-solid fa-chair" onclick="select('s26')"></i>
+                </div>
+                <div>
+                    <i id="s27" class="fa-solid fa-chair" style="color: red;"></i>
+                    <i id="s28" class="fa-solid fa-chair" onclick="select('s28')"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <i id="s29" class="fa-solid fa-chair" onclick="select('s29')"></i>
+                    <i id="s30" class="fa-solid fa-chair" onclick="select('s30')"></i>
+                </div>
+                <div>
+                    <i id="s31" class="fa-solid fa-chair"  style="color: red;"></i>
+                    <i id="s32" class="fa-solid fa-chair" onclick="select('s32')"></i>
+                </div>
+            </div>
+            <div class="row">
+                <i id="s33" class="fa-solid fa-chair" onclick="select('s33')"></i>
+                <i id="s34" class="fa-solid fa-chair" style="color: red;"></i>
+                <i id="s35" class="fa-solid fa-chair"  style="color: red;"></i>
+                <i id="s36" class="fa-solid fa-chair" onclick="select('s36')"></i>
+                <i id="s37" class="fa-solid fa-chair" onclick="select('s37')"></i>
+                <i id="s38" class="fa-solid fa-chair" style="color: red;"></i>
+            </div>
+            <button type="button" onclick="seatSelected()">Confirm</button>
+        </div><br><br><br>
+        <div>
+            <!-- <i class="fa-solid fa-circle" style="color: black; margin-left: 20px;"></i>
+            <span>Empty</span> -->
+            <i class="fa-solid fa-circle" style="color: red;"></i>
+            <span>Reserved</span>
+            <i class="fa-solid fa-circle" style="color: green;"></i>
+            <span>Non Reserved</span>
+        </div>
+    </center>
+</body>
+<script>
+    function select(seat_no) {
+        let x = document.getElementById(seat_no).style.color;
+        if (x == 'green') {
+            document.getElementById(seat_no).style.color = "black";
+        } else {
+            document.getElementById(seat_no).style.color = "green";
+            //document.getElementById(seat_no).onclick = null;
+        }
+    }
+
+    function seatSelected() {
+        let x = document.getElementsByClassName('fa-chair');
+        var flag = 0;
+        let len = document.getElementsByClassName('fa-chair').length;
+        for (let i = 1; i < len; i++) {
+            if (x[i].style.color == 'green') {
+                flag = 1;
+                x[i].style.color = "gray";
+                x[i].onclick = null;
+            }
+        }
+        if (flag == 1) {
+            window.open('bookBusTicket.html');
+        } else {
+            alert('Please select your seat');
+        }
+
+    }
+</script>
+
+</html>

@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://c.wallhere.com/photos/1f/7c/anime-172547.jpg!d');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 25vw;
+    background: rgb(243, 238, 238);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 70px 30px;
+    border: 1px solid rgb(177, 177, 89);
+    border-radius: 10px;
+}
+
+.Image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 105px;
+    background: rgb(243, 238, 238);
+    padding-bottom: 10px;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    background: rgb(243, 238, 238);
+    font-size: 22px;
+}
+
+.container p {
+    margin-top: 20px;
+    font-weight: bold;
+    background: rgb(243, 238, 238);
+}
+
+.container input {
+    width: 100%;
+    /* margin-bottom: 20px; */
+    background: rgb(243, 238, 238);
+}
+
+.container input[type="text"],
+input[type="password"],
+input[type='email'] {
+    border: none;
+    border-bottom: 1px solid black;
+    background: rgb(243, 238, 238);
+    outline: none;
+    height: 25px;
+    /* margin-top: 5px; */
+    font-size: 16px;
+}
+
+.container input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    /* background: rgba(243, 238, 238, 0.649); */
+    color: rgb(81, 80, 80);
+    font-size: 12px;
+    font-weight: 100;
+    font-weight: bold;
+}
+
+.Newaccount {
+    text-decoration: none;
+}
+
+#Button {
+    border-radius: 10px;
+    background-color: rgb(81, 80, 80);
+    color: white;
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.228), 0 10px 10px rgba(0, 0, 0, 0.228);
+    font-size: 1.2vw;
+}
+
+#Button:hover {
+    cursor: pointer;
+}
+
+#Button:active {
+    box-shadow: none;
+}

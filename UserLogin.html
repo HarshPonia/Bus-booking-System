@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./UserLogin.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <img src="./Images/user-login-icon-14.png" class="Image">
+        <h2 class="heading">Login</h2><br>
+        <form action="./login.php" method="post">
+            <p>Username</p>
+            <input type="text"  name="email">
+            <p>Password</p>
+            <input type="password" name="password">
+            <br>
+            <input type="submit" value="Login" id="Button">
+            <a href="" class="Newaccount">
+                <p onclick="RegistrationForm()">Don't have an account</p>
+            </a>
+
+        </form>
+    </div>
+  <script>
+      function RegistrationForm(){
+        window.open('RegisterForm.html');
+    }
+   
+  </script>
+</body>
+
+</html>

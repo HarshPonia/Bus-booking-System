@@ -1,0 +1,85 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     overflow-x: hidden;
+     font-family: 'poppins', sans-serif;
+ }
+ 
+ body {
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .container {
+     width: 560px;
+     border: 1px solid gray;
+     border-radius: 10px;
+     color: black;
+     background-color: rgba(128, 128, 128, 0.137);
+     font-weight: 300;
+     font-style: normal;
+     display: flex;
+     flex-direction: column;
+     padding: 20px;
+ }
+ 
+ .carddetails {
+     margin-top: 40px;
+     float: left;
+ }
+ 
+ .r1 {
+     display: flex;
+     margin-top: 20px;
+ }
+ 
+ .cardholder {
+     margin-left: 10px;
+ }
+ 
+ .cardholder,
+ .cardname {
+     padding-left: 4px;
+     border-radius: 4px;
+     background-color: rgba(128, 128, 128, 0.109);
+ }
+ 
+ .cardname {
+     margin-top: 5px;
+ }
+ 
+ #date {
+     display: flex;
+     margin-top: 2px;
+ }
+ 
+ button {
+     margin-top: 20px;
+     background-color: green;
+     color: white;
+     border: none;
+     padding: 5px;
+     border-radius: 5px;
+ }
+ 
+ #r3 {
+     display: flex;
+     justify-content: space-between;
+ }
+ /* a {
+     background-color: blueviolet;
+     color: white;
+     text-align: center;
+     text-transform: uppercase;
+     text-decoration: none;
+     padding: 10px;
+     font-size: 18px;
+     transition: 0.5s;
+ } */
+ /* a:hover {
+     background-color: dodgerblue;
+ } */

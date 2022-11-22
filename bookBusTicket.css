@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    overflow-y: hidden;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-image: url('./images/bus-stop.png');
+    background-size: cover;
+}
+
+.container {
+    width: 35vw;
+    background-color: white;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .title {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.selectItem {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+}
+
+label {
+    font-size: 1.3vw;
+    margin-top: 10px;
+}
+
+.select,
+input {
+    margin-top: 5px;
+    height: 2.5vw;
+    padding-left: 5px;
+}
+
+button {
+    width: 25vw;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-color: royalblue;
+    color: white;
+    font-size: 1.5vw;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.228), 0 10px 10px rgba(0, 0, 0, 0.228);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    box-shadow: none;
+}
+
+@media only screen and (max-width:480px) {}
