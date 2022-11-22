@@ -12,11 +12,9 @@
     background-size: cover;
     padding-top: 25px;
 }
-
 section {
     overflow-x: hidden;
 }
-
 #navbarItems {
     display: flex;
     flex-direction: row;
