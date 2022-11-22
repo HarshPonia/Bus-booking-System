@@ -54,7 +54,10 @@
                             <option value="2027">2027</option>
                             </select>
                     </div>
-                    <button onclick="Ticket()">Confirm payment</button>
+                    <div>
+                        <button onclick="Ticket()">Confirm payment</button>
+                        <button onclick="cancel()" style="margin-left: 10px;">Cancel Ticket</button>
+                    </div>
                 </div>
                 <img src="./images/card.png" alt="card" width="280px" height="200px" id="card-img">
             </div>
@@ -67,6 +70,10 @@
 <script>
     function Ticket() {
         window.open('FinalTicket.html');
+    }
+
+    function cancel() {
+        window.open('index.html');
     }
 </script>
 
